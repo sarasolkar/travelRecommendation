@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+    <nav>
+        <p>Travel4Fun</p>
+        <a href="travel_recommendation.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+        <div id="searchBar">
+            <input type="text" id="searchBarInput" placeholder="Enter a destination or keyword">
+            <button id="searchBtn">Search</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </nav>
+    <div class="mainpage">
+        <div class="socialMediaIcons">
+        <a href="https://www.instagram.com/"><img src="instagram.png"></a>
+        <a href="https://www.facebook.com/"><img src="facebook.png"></a>
+        <a href="https://x.com/"><img src="twitter.png"></a>
+        <a href="https://www.youtube.com/"><img src="youtube.png"></a>
+        </div>
+        <div class="info">
+            <h2 id="mainheading">EXPLORE YOUR DREAM LOCATION</h2>
+            <div id="description" class="description">The Travel Recommendation App helps users explore popular travel destinations
+            through an interactive and user friendly interface. It allows users to search for
+            beaches, temples, countries, or specific country names to view related cities along
+            with images and descriptions. The app dynamically fetches data from a structured
+            JSON file fo display relevant results. It provides a simple and efficient way to
+            discover and plan travel destinations
+            </div>
+        
+            
+        </div>
+        <button id="book">Book</button>
+        <div id="results"></div>
+    </div>
+    
+
+
+    
+    
+  <script src ="travel_recommendation.js"></script>  
+</body>
+</html>
