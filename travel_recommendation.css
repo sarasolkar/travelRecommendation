@@ -79,11 +79,40 @@ div a img{
 }
 
 .mainpage{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    padding:30px;
+}
+
+.left{
     display: flex;
     align-items: center;
-    gap: 70px;
-    margin-top: 20px;
-    min-height: 80vh;  
+    gap: 50px;
+}
+
+.info{
+    width: 600px;
+}
+
+.results-container{
+    width:700px;
+}
+
+#results{
+    display:grid;
+    grid-template-columns:repeat(2,320px);
+    gap:20px;
+}
+
+.resultheading{
+    grid-column: 1 / -1;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.resultheading h2{
+    font-size: 40px;
 }
 
 .socialMediaIcons{
@@ -262,19 +291,13 @@ textarea::placeholder{
     color: #ffffff;
 }
 
-#results{
-    display: grid;
-    grid-template-columns: repeat(2, 320px);
-    gap: 25px;
-    margin: 20px 0 0 0;
-}
-
 .card{
+    
+    gap: 25px;
     background: white;
     border-radius: 10px;
     padding: 8px;
     text-align: center;
-    width: 320px;
 }
 
 .card img{

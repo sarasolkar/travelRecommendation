@@ -5,11 +5,12 @@ const book = document.getElementById('book');
 
 function searchDestination(){
     const input = document.getElementById('searchBarInput');
-    heading.textContent = 'Search Results'
     resultDiv.innerHTML='';
     const description = document.getElementById("description");
-    description.style.display = "none";
-    book.style.display = "none";
+    document.querySelector(".info").style.display = "none";
+    const headingres = document.createElement("div")
+    headingres.classList.add("resultheading")
+    headingres.innerHTML="<h2>Search Results<h2>";
     fetch("travel_recommendation_api.json")
     .then(response=>response.json())
     .then(data=>{
@@ -30,6 +31,7 @@ function searchDestination(){
                 alert('Not Found')
             }
         }
+        resultDiv.appendChild(headingres);
         destination.forEach(place=>{
             const card = document.createElement("div");
             card.classList.add("card");
@@ -47,3 +49,12 @@ function searchDestination(){
 }
 btnSearch.addEventListener('click',searchDestination)
 
+const resetBtn = document.getElementById("resetBtn");
+
+function resetSearch() {
+    document.getElementById("searchBarInput").value = "";
+    resultDiv.innerHTML = "";
+    document.querySelector(".info").style.display = "block";
+}
+
+resetBtn.addEventListener("click", resetSearch);
