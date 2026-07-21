@@ -92,7 +92,8 @@ div a img{
 }
 
 .info{
-    width:450px;
+    width: 100%;
+    max-width: 900px;
 }
 
 .results-container{
@@ -147,22 +148,21 @@ div a img{
 }
 .team{
     display: flex;
-    flex-direction: row;
-    margin-top: 20px;
+    flex-wrap: wrap;
     gap: 20px;
+    margin-top: 20px;
 }
 .profiles{
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
-    padding: 20px;
+    flex: 1 1 250px;
+  
     background-color: #1c2b2d33;
     border-radius: 10px;
     color: aliceblue;
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 .profiles img{
     width: 50px;
@@ -275,10 +275,11 @@ textarea::placeholder{
 }
 
 .mainpageabtus{
-    margin-top: 6px;
+    margin-top: 30px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
+    padding: 30px;
 }
 #searchBarInput:focus{
     outline: none;
