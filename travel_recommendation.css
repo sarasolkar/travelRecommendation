@@ -99,6 +99,7 @@ div a img{
     max-width: 1000px;
     width: 100%;
     color: white;
+    font-size: 19px;
 }
 .results-container{
     flex:1;
