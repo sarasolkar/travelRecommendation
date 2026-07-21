@@ -80,8 +80,8 @@ div a img{
 
 .mainpage{
     display:flex;
+    justify-content:space-between;
     align-items:flex-start;
-    gap:40px;
     padding:30px;
 }
 
@@ -92,20 +92,23 @@ div a img{
 }
 
 .info{
-    width: 100%;
-    max-width: 900px;
+    width: 600px;
 }
-
+.info1{
+    margin-top: 110px;
+    max-width: 1000px;
+    width: 100%;
+    color: white;
+}
 .results-container{
-    flex:1;
-    width:100%;
+    width:700px;
 }
 
 #results{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(2,320px);
     gap:20px;
-    width:100%;
+    margin-left: 20px;
 }
 
 .resultheading{
@@ -148,21 +151,22 @@ div a img{
 }
 .team{
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: row;
     margin-top: 20px;
+    gap: 20px;
 }
 .profiles{
     display: flex;
     flex-direction: column;
-    flex: 1 1 250px;
-  
+    flex: 1 1 0;
+    padding: 20px;
     background-color: #1c2b2d33;
     border-radius: 10px;
     color: aliceblue;
     align-items: center;
     justify-content: center;
     text-align: center;
+
 }
 .profiles img{
     width: 50px;
@@ -275,11 +279,10 @@ textarea::placeholder{
 }
 
 .mainpageabtus{
-    margin-top: 30px;
+    margin-top: 6px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 40px;
-    padding: 30px;
 }
 #searchBarInput:focus{
     outline: none;
