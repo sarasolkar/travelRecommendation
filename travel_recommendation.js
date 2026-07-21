@@ -22,6 +22,11 @@ function searchDestination(){
         else if(word === "temples" || word === "temple"){
             destination = data.temples;
         }
+        else if(word === "country" || word === "countries"){
+            data.countries.forEach(country => {
+                destination.push(...country.cities);
+            });
+        }
         else{
             const country = data.countries.find(item=>item.name.toLowerCase()===word)
             if(country){
